@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>青浜岛</title>
+	<style type="text/css">
+		#body{background-color: #E5E5E5}
+		#d1{background-color: #FFFFFF;
+			width: 1550px;
+			height: 65px;
+			margin: 0px -8px 20px -8px;
+		    position: fixed;
+		top: 0;}	
+		#d1 ul{list-style-type: none;
+		}
+		#d1 ul li{display: block;
+			float:left;
+	        position: relative;}
+		#d1 ul li a{color:#A2A2A2;
+	text-decoration: none;}
+#d2{display: block;
+	width:100%;
+	margin-top:85px;
+	padding:0;
+	height:1600px;
+	}
+#d2 img{width:1200px;
+	height:540px;
+		margin: 25px 50px 55px 50px; }
+#d3{width:1300px;
+		height: 620px;
+		background-color:#C5C5C5;
+		margin: 20px auto 10px auto;}
+#d4{width: 1300px;
+		height: 400px;
+		margin-top: 0px;
+		margin-left: auto;
+	    margin-right: auto;
+		}
+		#d4 img{
+			width: 850px;
+		height: 270px;
+		margin-left: 450px;
+		margin-top: -40px;}
+		#d5{width: 1300px;
+		height: 400px;
+		margin-top: 0px;
+		margin-left: auto;
+	    margin-right: auto;}
+		#d5 img{
+			width: 850px;
+		height: 270px;
+		margin-left: 0px;
+		margin-top: -15px;}
+		#d6{
+			width: 1300px;
+		height: 400px;
+		margin-top: 0px;
+		margin-left: auto;
+	    margin-right: auto;
+		}
+		#d6 img{
+			width: 850px;
+		height: 270px;
+		margin-left: 450px;
+		margin-top: -60px;}
+		#d7{
+			width: 1300px;
+		height: 400px;
+		margin-top: 0px;
+		margin-left: auto;
+	    margin-right: auto;
+		}
+		#d7 img{
+			width: 820px;
+		height: 270px;
+		margin-left: 0px;
+		margin-top: -90px;}
+		#d8{
+			width: 1300px;
+		height: 400px;
+		margin-top: 0px;
+		margin-left: auto;
+	    margin-right: auto;
+		}
+		#d8 img{
+			width: 820px;
+		height: 270px;
+		margin-left: 450px;
+		margin-top: -130px;}
+		#d9{
+			width: 1300px;
+		height: 300px;
+		margin-top: 0px;
+			margin-bottom: 0px;
+		margin-left: auto;
+	    margin-right: auto;
+		}
+		#d9 img{
+			width: 830px;
+		height: 270px;
+		margin-left: 0px;
+		margin-top: -170px;}
+.point{
+	height:20px;
+	position:relative;
+	top:-60px;
+	width:20px;
+	margin:0 auto;
+	left:0px;
+	z-index:999;
+	text-align:center;
+	}
+.point ul li{
+	width:20px;
+	height:20px;
+	margin:0 5px;
+	float:left;
+	list-style:none;
+	}
+.point ul li img{width:20px;height:20px;}
+.point ul li img:hover{cursor:pointer;}
+
+	</style>
+</head>
+<body id="body">
+	<div id="d1">
+		<ul>
+			<li style="color: #000000; font-family: 楷体; font-size: 30px; font-weight: bold; 
+					   margin-top: 0px; margin-left: 70px;margin-right: 100px;">青浜岛/</li>
+			<li style="color: #A2A2A2; margin-top: 5px; margin-left: 450px;"><a href="#">东极岛</a></li>
+			<li style="color: #A2A2A2; margin-top: 5px; margin-left: 60px;"><a href="#">花鸟岛</a></li>
+			<li style="color: #A2A2A2; margin-top: 5px; margin-left: 60px;"><a href="#">小岛日记</a></li>
+			<li style="color: #A2A2A2; margin-top: 5px; margin-left: 285px;"><a href="#">登录/注册</a></li>
+		</ul>
+	</div>
+	<div id="d2">
+	<!-- 要切换的图片 -->
+	<div id="d3">
+		<img alt="tupian" src="../素材/photo01.jpg" style="height:540px; width:1200px;" id="img"/>
+	</div>
+    <div class="point" style="display:block;">
+        <ul>
+            <li id="p1" onmouseover="point(this)" onmouseout="leave()" >
+                <img src="" alt="" id="i1" />
+            </li>
+            <li id="p2" onmouseover="point(this)" onmouseout="leave()" >
+                <img src="" alt="" id="i2" />
+            </li>
+            <li id="p3" onmouseover="point(this)" onmouseout="leave()" >
+                <img src="" alt="" id="i3" />
+            </li>
+            <li id="p4" onmouseover="point(this)" onmouseout="leave()" >
+                <img src="" alt="" id="i4" />
+            </li>
+        </ul>
+    </div>
+	<div id="d4">
+		<img src="../pic/7.jpg" />
+	</div>
+	<div id="d5">
+		<img src="../pic/8.jpg" />
+	</div>
+	<div id="d6">
+		<img src="../pic/9.png" />
+	</div>
+	<div id="d7">
+		<img src="../pic/10.png" />
+	</div>
+	<div id="d8">
+		<img src="../pic/11.png" />
+	</div>
+	<div id="d9">
+		<img src="../pic/12.png" />
+	</div>
+</div>
+
+<script>var min=1, max=4;
+//设置切换的图片
+var imgList = new Array();
+imgList[0]="../pic/1.jpg";
+imgList[1]="../pic/2.jpg";
+imgList[2]="../pic/3.jpg";
+imgList[3]="../pic/4.jpg";
+//自动变化“小圆点”
+var li_imgList = new Array();
+li_imgList[0]="i1";
+li_imgList[1]="i2";
+li_imgList[2]="i3";
+li_imgList[3]="i4";
+//鼠标触碰修改（这里感觉重复了，懒得改了。。）
+var liList = new Array();
+liList[0]="p1";
+liList[1]="p2";
+liList[2]="p3";
+liList[3]="p4";
+
+//自动循环
+var int=self.setInterval("loop()",2000);
+function loop(){
+	var str=document.getElementById("img").src;
+	for(var i=0; i<4; i++){
+		if(min==4){
+			min=0;
+		}
+		if(i==min){
+			document.getElementById("img").src=imgList[i];
+			min++;
+			if(i==0){
+				document.getElementById(li_imgList[i]).src="";
+				document.getElementById(li_imgList[3]).src="";
+			}else{
+				document.getElementById(li_imgList[i]).src="";
+				document.getElementById(li_imgList[i-1]).src="";
+			}
+			break;
+		}
+	}
+}
+//鼠标触碰显示图片+暂停循环显示
+var a=3;
+function point(obj){
+	clearInterval(int);
+	//alert(obj.id);
+	for(var i=0;i<4;i++){
+		if(obj.id==liList[i]){
+			document.getElementById("img").src=imgList[i];
+			min=i+1;
+			document.getElementById(li_imgList[i]).src="";
+			for(var a=0;a<4;a++){
+				if(a!=i){
+					document.getElementById(li_imgList[a]).src="";
+				}
+			}
+		}
+	}
+}
+//鼠标离开继续循环
+function leave(){
+	int = setInterval("loop()",2000);
+}
+</script>
+</body>
+</html>
